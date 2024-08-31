@@ -39,10 +39,10 @@ ul {
     padding: 15px;
     }
     #middlepart{
-    	height:300px;
+      min-height: 300px;
         background-color:white;
         position: relative;
-    overflow: auto;
+    overflow: visible;
     }
     #bottom{
     border: 1px solid #d4d4d4;
@@ -121,6 +121,22 @@ ul {
     border-radius: 4px;
     margin: 4px;
 }
+a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+#left a{
+    text-decoration: none;
+
+}
+
+.item:hover {
+    background-color: #ffffff;
+}
+a:hover {
+    text-decoration: none;
+}
 
 
   </style>
@@ -129,7 +145,7 @@ ul {
   
 <div class="wrapper">
 <div id="top">
-  <h1 class="white">Welcome to My Homepage</h1>
+  <h1 class="white">Welcome to Jikwang's Homepage (22300593)</h1>
 
   <p class="white">Use the menu to select different Stylesheets</p>
 </div>
@@ -139,10 +155,10 @@ ul {
   <div id="left">
   <ul id="menulist">
     <li class="item">Stylesheet 1</li>
-    <li class="item">Stylesheet 2</li>
-    <li class="item">Stylesheet 3</li>
-    <li class="item">Stylesheet 4</li>
-    <li class="item">No Stylesheet</li>
+    <li class="item"><a href="style2.html">Stylesheet 2</a></li>
+    <li class="item"><a href="style3.html">Stylesheet 3</a></li>
+    <li class="item"><a href="style4.html">Stylesheet 4</a></li>
+    <li class="item"><a href="nostyle.html">No Stylesheet</a></li>
 </ul>
 </div>
 
@@ -151,7 +167,7 @@ ul {
 <h1>Same Page Different Stylesheets</h1>
 <p>This is a demonstration of how different stylesheets can change the layout of your HTML page. You can change the layout of this page by selecting different stylesheets in the menu, or by selecting one of the following links:
 </p>
-<a href="">Stylesheet1,</a>&nbsp;<a href="">Stylesheet2,</a>&nbsp;<a href="">Stylesheet3,</a>&nbsp;<a href="">Stylesheet4.</a>&nbsp;
+<a href="style1.html">Stylesheet1,</a>&nbsp;<a href="style2.html">Stylesheet2,</a>&nbsp;<a href="">Stylesheet3,</a>&nbsp;<a href="">Stylesheet4.</a>&nbsp;
 
 <h2>No Styles</h2>
 <p>This page uses DIV elements to group different sections of the HTML page. Click here to see how the page looks like with no stylesheet:</p>
