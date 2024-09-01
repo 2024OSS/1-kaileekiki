@@ -10,15 +10,21 @@
     background-color: #22252a;
     color: rgb(139, 137, 137);
     line-height: 20px;
+    font-size: 18px;
+    margin: 20px;
+    line-height: 20px;
     }
     #top{
       background-color: #2b3036;
 color: #e0dcdc;
 padding: 15px;
 border-radius: 4px;
-margin: 4px;
+margin: 20px;
 margin-left: 50px;
 margin-right: 50px;
+}
+.st1{
+  margin-inline-start: 30px;
 }
 ul {
     display: block;
@@ -44,35 +50,86 @@ background-color: #0d6efd;
 border-radius: 5px;
 color: #ffffff;
 list-style-type: none;
-margin: 10px;
+margin: 30px;
 padding: 5px;
 text-align: center;
 cursor: pointer;
 }
+.item:hover {
+    background-color: #0e64e4;
+    color: #ffffff;
+}
+.seconditem:hover {
+  color: rgb(154, 154, 154);
+}
 #second{
   position : absolute;
 bottom : 0;
+
 }
 #second p{
   color:  white;
+  
+}
+#one{
+  float: left;
+  
+  margin-right: 25px;
+}
+#two{
+  font-size: 17px;
+  float: left;
+  margin-right: 20px;
+}
+#three{
+  
+  float: left;
+  margin-right: 20px;
+  
+}
+#three p{
+  font-size: 17px;
+  color: rgb(139, 137, 137);
+}
+#four{
+  font-size: 17px;
+  float: left;
+  margin-right: 20px;
+}
+#four p{
+  font-size: 17px;
+  color: rgb(94, 94, 94);
+}
+#five{
+  font-size: 17px;
+  float: left;
+}
+#five p{
+  font-size: 17px;
+  color: rgb(139, 137, 137);
 }
   </style>
 </head>
 <body>
   <div>
     <div id="top">
-      <h2>Bottom Navbar example</h2>
-      <p>This example is a quick exercise to illustrate how the bottom navbar works.</p>
+      <h1 class="st1">Bottom Navbar example</h1>
+      <p class="st1">This example is a quick exercise to illustrate how the bottom navbar works.</p>
       <ul id="view">
-        <li class="item">          View navbar docs >></li>
+        <li class="item"> View navbar docs >></li>
 
     </div>
     <div id="second">
-      <p>Bottom navbar
-        Home
-        Link
-        Disabled
-        Dropup</p>
+      <div id="one"><p>Bottom navbar</p></div>
+      
+      <div id="two"><p>Home</p></div>
+      
+      <div id="three"><p class="seconditem">Link</p></div>
+      
+      <div id="four"><p>Disabled</p></div>
+      
+      <div id="five"><p class="seconditem">Dropup ▴</p></div>
+      
     </div>
   </div>
 
